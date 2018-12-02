@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 from flask import render_template
-
+from flask_socketio import emit
 from Visualization import app, socketio
 
 
