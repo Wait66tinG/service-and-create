@@ -13,13 +13,13 @@ html需要用到JavaScript里面的vue.js
 ### 环境问题
 * 使用html没有什么限制，但是如果想做出漂亮的界面的话需要下载一些写好的CSS(样式文件)的代码和js(控件文件)的代码，方便我们应用
 * 使用python需要在windows中安装python环境，我们统一使用python3以上的版本编写，这里是因为python3和python3以前的版本的语法都不一样，所以我们统一使用python3
-#### 为什么要用python3?
+### 为什么要用python3?
 一个是他很火，第二个他很简单
 完成一个"hello world"python3只需要一行
 
 `print('hello,wolrd')`
 
-##### 然后这里再推荐一些实用工具
+### 然后这里再推荐一些实用工具
 * visual studio code 用来代替记事本的编辑
 * pycharm 用于编辑python3
 * 第三个是webstorm 主要是html相关编辑
