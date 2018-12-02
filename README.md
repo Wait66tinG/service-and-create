@@ -1,6 +1,7 @@
 # readme.md
 
-readme.md文件和他的名字一样，就是一个对于项目的简单介绍，可以说是一个小的使用文档。
+作者：Wait66tinG  
+  readme.md文件和他的名字一样，就是一个对于项目的简单介绍，可以说是一个小的使用文档。
 ## 项目概要
 我们这次项目主要需要使用的是python html 
 python中的网络框架是Flask
@@ -24,6 +25,7 @@ html需要用到JavaScript里面的vue.js
 * pycharm 用于编辑python3
 * 第三个是webstorm 主要是html相关编辑
 # 关于github-desktop的使用
+``` sh
 现在在项目中已经搭建了一个主分支
 大家需要把这个主分支pull到自己的电脑里
 如果你已经安装好了python3和pycharm的话
@@ -39,6 +41,7 @@ html需要用到JavaScript里面的vue.js
 和一个我的分支WAIT，大家在更改之后可以选择提交到自己的分支
 这样就不会对已经完成主分支产生威胁，并且你也可以去调试它
 其他成员也可以查看你的分支，共同查看和解决问题
+```
 ## 步骤
 * 首先需要安装github-desktop
 * 在github我们项目的主页中clone or download，在desktop中打开
