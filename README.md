@@ -1,5 +1,6 @@
 # readme.md
 
+作者：Wait66tinG  
 readme.md文件和他的名字一样，就是一个对于项目的简单介绍，可以说是一个小的使用文档。
 ## 项目概要
 我们这次项目主要需要使用的是python html 
