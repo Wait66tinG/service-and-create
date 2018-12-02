@@ -1,11 +1,8 @@
 #!/usr/bin/env python
-from flask import Flask, render_template, session, request
-from flask_socketio import SocketIO, emit
+from flask import render_template
 
-app = Flask(__name__)
-app.config['SECRET_KEY'] = 'secret!'
+from Visualization import app, socketio
 
-socketio = SocketIO(app)
 
 @app.route('/')
 def index():
@@ -19,5 +16,3 @@ def client_msg(msg):
 def connected_msg(msg):
     emit('server_response', {'data': msg['data']})
 
-if __name__ == '__main__':
-    socketio.run(app, host='127.0.0.1',port=5001)
