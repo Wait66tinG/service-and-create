@@ -8,4 +8,4 @@ app.config['SECRET_KEY'] = 'secret!'
 
 socketio = SocketIO(app)
 
-import Visualization.app
+import Visualization.view
