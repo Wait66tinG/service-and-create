@@ -5,6 +5,7 @@
 <title>圆饼图</title>
 <link href="../static/css/style.css" type="text/css" rel="stylesheet" />
 <script type="text/javascript" src="../static/scripts/jquery.js"></script>
+<script src="../static/scripts/vue.min.js"></script>
 </head>
 <body>
 <style type="text/css">
@@ -22,78 +23,63 @@ body{background:#fff;font-family:"Trebuchet MS", Verdana, Arial, Helvetica, sans
 </style>
 
 <script src="../static/scripts/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/vue"></script>
-<!--[if IE]>
 <script src="js/excanvas.js"></script>
-<![endif]-->
 
 <script type="text/javascript" src="../static/scripts/pieChart.js"></script>
-<script type="text/javascript" charset="utf-8">
-	var app = new Vue({
-		el: '#app',
-		data: {
-		message: 'hello'
-		}
-	})
-</script>
+
 </div>
 <div id="container" >
 	<canvas id="chart" width="600" height="500" style="left:0px"></canvas>
-	<div class="col-md-4">	
-		<ul>
-			<li>
-				<p style="float:left">王大同</p>
-				<input type="text" name="emit_data" id="emit_data" placeholder="Message">
-				<input type="submit" value="Echo">
-			</li>
-			<li>
-				<p style="float:left">游锦旭</p>
-				<input type="text" name="emit_data" id="emit_data" placeholder="Message">
-				<input type="submit" value="Echo">
-			</li>
-			<li>
-				<p style="float:left">叶家源</p>
-				<input type="text" name="emit_data" id="emit_data" placeholder="Message">
-				<input type="submit" value="Echo">
-			</li>
-			<li>
-				<p style="float:left">羊奕杰</p>
-				<input type="text" name="emit_data" id="emit_data" placeholder="Message">
-				<input type="submit" value="Echo">
-			</li>
-		</ul>
-		<div  class="col-md-4" id='log'></div>
-		<div id="app">
-			<h1>woshibaba{{ message }}</h1>
-		</div>
-	</div>
-	
+	<h1 id="app4">{{ message }}</h1>
 	</table>
 	<table id="chartData">
 		<tr>
 			<th>创业团队F4成员</th><th>编写代码量</th>
 		</tr>
-		<tr style="color:#0DA068">
-			<td>王大同</td><td>123</td>
+		<tr style="color:#0DA068" id="app">
+			<td>王大同</td><td>{{ message }}</td>
 		</tr>
-		<tr style="color:#194E9C">
-			<td>游锦旭</td><td>138.5</td>
+		<tr style="color:#194E9C" id="app1">
+			<td>游锦旭</td><td>{{ message }}</td>
 		</tr>
-		<tr style="color:#ED9C13">
-			<td>叶家源</td><td>100</td>
+		<tr style="color:#ED9C13" id="app2">
+			<td>叶家源</td><td>{{ message }}</td>
 		</tr>
-		<tr style="color:#ED5713">
-			<td>羊奕杰</td><td>3192</td>
+		<tr style="color:#ED5713" id="app3">
+			<td>羊奕杰</td><td>{{ message }}</td>
 		</tr>
-		<!-- <tr style="color:#057249">
-			<td>jquery表单特效</td><td>6122.06</td>
-		</tr>
-		<tr style="color:#5F91DC">
-			<td>html5特效</td><td>128.11</td>
-		</tr>
-		<tr style="color:#F88E5D">
-			<td>html5 图表</td><td>245.55</td>
-		</tr> -->
-	</div>
+		    <script type="text/javascript" charset="utf-8">
+        var app = new Vue({
+          el: '#app',
+          data: {
+            message: '120'
+          }
+        })
+		var app1 = new Vue({
+          el: '#app1',
+          data: {
+            message: '120'
+          }
+        })
+		var app2 = new Vue({
+          el: '#app2',
+          data: {
+            message: '120'
+          }
+        })
+		var app3 = new Vue({
+          el: '#app3',
+          data: {
+            message: '3000'
+          }
+        })
+        var app3 = new Vue({
+          el: '#app4',
+          data: {
+            message: '你们都是弟弟'
+          }
+        })
+    </script>
+</div>
 </body>
 </html>
