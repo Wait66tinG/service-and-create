@@ -10,7 +10,7 @@ def index():
 
 @app.route('/test1')
 def screen():
-    return render_template('test1.html')
+    return app.send_static_file('test1.html')
 
 @socketio.on('client_event')
 def client_msg(msg):
